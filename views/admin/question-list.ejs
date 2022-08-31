@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+</head>
+<body>
+    <% if(questions.length > 0) { %>
+        <h1>Questions</h1>
+        <p>List of all questions...</p>
+        <% for(let question of questions) { %>
+            <p><%=question.q%></p>
+            <% for(let i = 0; i < question.a.length; i++) { %>
+                <p><%= question.a.at(i).answer %></p>
+                <p><%= question.a.at(i).weight %></p>
+                <form action="/questions" method="POST">
+                    <button class="btn" type="submit">Preferred!</button>
+                    <input type="hidden" name='weight' value='<%= question.a.at(i).weight %>'>
+                </form>
+            <% } %>
+        <% } %>
+    <% } %>
+</body>
+</html>
