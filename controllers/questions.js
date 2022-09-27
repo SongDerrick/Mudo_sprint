@@ -1,14 +1,18 @@
 
-const questions = require('../data/data').questionList;
+const questions = require('../data/data.json')
 const User = require('../models/userdata');
-
 
 exports.getSendQuestions = (req, res, next) => {
     //res.send(questions.at(0).a.at(0).answer);
-    res.render('admin/question-list',{
-        questions : questions
-    } );
+    res.render('admin/question-list', {
+        questions: questions
+    });
 } // this middle ware routes /survey -> this displays questions
+
+exports.getQuestions = (req, res, next) => {
+    console.log('hi');
+    res.send(questions);
+}
 
 exports.postUserData = (req, res, next) => {
     const weight = req.body.weight;
