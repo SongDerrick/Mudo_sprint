@@ -1,18 +1,32 @@
 [
-    "Chung",
-    "Park",
-    "Kim",
-    "Park",
     {
-        "weight": "Park",
-        "id": "0.9446684796741662"
+        "value": "Chung"
     },
     {
-        "weight": "Chung",
-        "id": "0.1675440785442135"
+        "value": "Park"
     },
     {
-        "weight": "Chung",
-        "id": "0.9976396368002693"
+        "value": "Kang"
+    },
+    {
+        "value": "Kang"
+    },
+    {
+        "value": "Kang"
+    },
+    {
+        "value": "Kang"
+    },
+    {
+        "value": "Kang"
+    },
+    {
+        "value": "Kang"
+    },
+    {
+        "value": "Kang"
+    },
+    {
+        "value": "Kang"
     }
 ]
