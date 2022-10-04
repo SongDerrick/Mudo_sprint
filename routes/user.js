@@ -10,4 +10,6 @@ router.get('/questions', questionsController.getSendQuestions);
 
 router.post('/questions', questionsController.postUserData);
 // '/questions' get method defined via controller -> this method shows questions
+
+router.get('/', questionsController.getQuestionData);
 module.exports = router;

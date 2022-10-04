@@ -10,6 +10,11 @@ exports.getSendQuestions = (req, res, next) => {
     } );
 } // this middle ware routes /survey -> this displays questions
 
+exports.getQuestionData = (req, res, next) => {
+    console.log(questions)
+    res.send(questions)
+}
+
 exports.postUserData = (req, res, next) => {
     const weight = req.body.weight;
     console.log(weight);
