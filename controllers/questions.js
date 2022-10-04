@@ -9,9 +9,9 @@ exports.getSendQuestions = (req, res, next) => {
     });
 } // this middle ware routes /survey -> this displays questions
 
-exports.getQuestions = (req, res, next) => {
-    console.log('hi');
-    res.send(questions);
+exports.getQuestionData = (req, res, next) => {
+    console.log(questions)
+    res.send(questions)
 }
 
 exports.postUserData = (req, res, next) => {
