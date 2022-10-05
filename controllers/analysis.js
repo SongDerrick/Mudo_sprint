@@ -39,3 +39,26 @@ exports.getQuery = (req, res, next) => {
     }
     res.send(result);
 };
+
+exports.getAnalysis = (req, res, next) => {
+
+
+    const newUser = userData; // user data 가져옴
+    const newUserArray = []; // user data 를 어레이로
+    for(let i = 0; i< newUser.length; i++){
+        newUserArray.push(newUser[i].value);
+    }
+    
+    const occurrences = {};
+    for (const v of newUserArray) {
+     occurrences[v] = occurrences[v] ? occurrences[v] + 1 : 1;
+    } // 갯수세기
+    console.log(occurrences);
+
+    let maxkey = Object.keys(occurrences).reduce(function (a, b) { return occurrences[a] > occurrences[b] ? a : b });
+    console.log(maxkey);
+    console.log(occurrences[maxkey]);// 가장 많은 표 받은 후보 짠!
+    
+    res.redirect('/query')
+
+};
