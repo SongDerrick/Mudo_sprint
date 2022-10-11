@@ -31,14 +31,16 @@ exports.getQuery = (req, res, next) => {
     console.log(arr)
     let result = []
     for (i of arr) {
-        for (j = 0; j < newquestionArray[i].a.length; j++) {
-            if (newquestionArray[i].a[j]["weight"] === maxkey) {
-                result.push(newquestionArray[i].a[j]["answer"])
+        for (j = 0; j < newquestionArray[i].choices.length; j++) {
+            if (newquestionArray[i].choices[j]["value"] === maxkey) {
+                result.push(newquestionArray[i].choices[j]["text"])
             }
         }
     }
     res.send(result);
-};
+}; // Function 3 : GET Question Data and Query for selected items
+
+
 
 exports.getAnalysis = (req, res, next) => {
 
@@ -61,4 +63,4 @@ exports.getAnalysis = (req, res, next) => {
     
     res.redirect('/query')
 
-};
+}; // Function 2 : GET Result Data from user data and Find largest valued candidate
