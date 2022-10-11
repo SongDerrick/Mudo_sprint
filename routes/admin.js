@@ -11,4 +11,5 @@ router.post('/results', (req, res, next) => {
 })
 
 router.get('/query', analysisController.getQuery);
+router.get('/analysis', analysisController.getAnalysis);
 module.exports = router;
