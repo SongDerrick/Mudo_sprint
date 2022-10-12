@@ -81,15 +81,26 @@ exports.getAnalysis = (req, res, next) => {
     const questions = questionData;
     const newquestionArray = [];
 
-    let result = [];
+    let arr = [];
+    const result = [];
 
 
     for (let i = 0; i < questions.length; i++) {
         newquestionArray.push(questions[i]);
         for (j = 0; j < newquestionArray[i].choices.length; j++) {
             if (newquestionArray[i].choices[j]["value"] === maxkey) {
-               result.push(newquestionArray[i].choices[j]["text"])
+               arr.push(newquestionArray[i].choices[j]["text"])
             }
+        }
+    }
+
+    console.log(arr);
+
+    for(value of mostPicked){
+        console.log(value)
+        for(let i = 0; i < arr.length; i++){
+            if(value == i)
+                result.push(arr[i])
         }
     }
 
