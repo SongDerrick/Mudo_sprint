@@ -1,36 +1,13 @@
-[
-    {
-        "value": "Chung"
-    },
-    {
-        "value": "Park"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Kang"
-    },
-    {
-        "value": "Lee.Jae"
-    }
-
-]
+{
+        "question1": "Chung",
+        "question2": "Park",
+        "question3": "Kang",
+        "question4": "Kang",
+        "question5": "Kang",
+        "question6": "Kang",
+        "question7": "Kang",
+        "question8": "Kang",
+        "question9": "Kang",
+        "question10": "Kang",
+        "question11": "Lee.Sun"
+}

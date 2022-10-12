@@ -12,4 +12,5 @@ router.post('/results', (req, res, next) => {
 
 router.get('/query', analysisController.getQuery);
 router.get('/analysis', analysisController.getAnalysis);
+router.post('/userdata', analysisController.postUserData);
 module.exports = router;

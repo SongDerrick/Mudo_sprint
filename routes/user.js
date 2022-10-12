@@ -8,7 +8,7 @@ const questionsController = require('../controllers/questions');
 router.get('/questions', questionsController.getSendQuestions);
 // '/questions' get method defined via controller -> this method shows questions
 
-router.post('/questions', questionsController.postUserData);
+//router.post('/questions', questionsController.postUserData);
 // '/questions' get method defined via controller -> this method shows questions
 
 router.get('/', questionsController.getQuestionData);
